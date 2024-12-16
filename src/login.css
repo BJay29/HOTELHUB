@@ -1,0 +1,108 @@
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pexels-pixabay-237371.jpg'); /* Adjust the path to your image */
+    background-size: cover; /* Ensures the image covers the viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: #f5f5f5; /* Fallback color if the image doesn't load */
+    min-height: 100vh; /* Ensures body is at least the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Adding a semi-transparent overlay */
+body::after {
+    content: '';
+    position: fixed; /* Fixes the overlay to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Covers the full viewport width */
+    height: 100vh; /* Covers the full viewport height */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    z-index: -1; /* Ensures the overlay is behind the content */
+}
+
+/* Container for the login form */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust transparency (0.7 is less transparent than 0.9) */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limits the form width */
+    text-align: center;
+    color: #000000;
+}
+
+/* Heading */
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #000000;
+}
+
+/* Input fields */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.form-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+/* Button styling */
+.form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Create account link */
+.create-account-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.create-account-link:hover {
+    text-decoration: underline;
+}

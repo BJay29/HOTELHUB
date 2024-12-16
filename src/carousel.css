@@ -1,0 +1,17 @@
+/* CarouselStyles.css */
+.carousel-inner {
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
